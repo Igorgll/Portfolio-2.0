@@ -1,6 +1,6 @@
 import * as style from './styles'
 import Navbar from '../../components/Navbar';
-import computer from '../../assets/Web development _Outline.svg';
+import computer from '../../assets/monitor_illustration_2.svg';
 import wavingHand from '../../assets/waving-hand_1f44b.png';
 
 const SectionOne = () => {
