@@ -1,11 +1,12 @@
 import * as style from './styles';
 import NavToggle from '../NavToggle';
+import IgorLima from '../../assets/igorLima.png'
 
 const Navbar = () => {
     return (
     <style.Navbar>
         <nav>
-            <h1>Igor Lima</h1>
+            <img src={IgorLima} alt="" />
 
             <ul>
                 <li>About me</li>

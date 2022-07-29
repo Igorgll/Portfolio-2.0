@@ -20,9 +20,10 @@ const GlobalStyle = createGlobalStyle `
     --black: #0A100D;
     --laurel-green: #B9BAA3;
     --light: #F6F4F6;
+    --light-window: #F7F7F7;
     --dark: #404040;
 
-    --dark-background: #292b2c;
+    --dark-background: #383c3f;
   }
 
   @media (max-width: 1080px) {

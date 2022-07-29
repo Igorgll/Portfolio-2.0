@@ -53,17 +53,45 @@ export const SectionOne = styled.section`
             display: flex;
             align-items: center;
             font-size: 2rem; 
+
+            position: absolute;
+
+            margin-left: 10px;
+
+            transform: rotate(-8deg) translateY(-60px);
         }
 
         h1 {
             font-size: 4rem;
             font-weight: 600;
             text-align: flex-start;
+
+            margin-top: 1rem;
         }
 
-        img {
-            padding-bottom: 14px;
-            padding-left: 8px;
+        #Hi {
+            padding: 0px;
+        }
+
+        #waving_hand {
+            padding-bottom: 30px;
+            padding-left: 5px;
+
+            transform: rotate(30deg)
+        }
+    }
+
+    @media(max-width: 1440px) {
+        padding: 0px 60px;
+
+        .content {
+            margin: 0;
+        }
+
+        .col-left {
+            img {
+                width: 600px;
+            }
         }
     }
 
