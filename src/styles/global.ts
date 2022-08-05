@@ -24,6 +24,7 @@ const GlobalStyle = createGlobalStyle `
     --dark: #404040;
 
     --dark-background: #383c3f;
+    --dark-shadow: #1c1c1b;
   }
 
   @media (max-width: 1080px) {
