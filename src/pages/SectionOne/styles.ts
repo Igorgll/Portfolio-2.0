@@ -81,6 +81,10 @@ export const SectionOne = styled.section`
         }
     }
 
+    #nav__collapse {
+        display: none;
+    }
+
     @media(max-width: 1440px) {
         padding: 0px 60px;
 
@@ -123,6 +127,8 @@ export const SectionOne = styled.section`
     }
 
     @media(max-width: 768px) {
+        padding: 0;
+        
         .content {
             margin: 0;
         }
@@ -140,6 +146,10 @@ export const SectionOne = styled.section`
             span {
                 font-size: 1.4rem;
             }
+        }
+
+        #nav__collapse {
+            display: block;
         }
     }
 

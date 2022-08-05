@@ -1,5 +1,4 @@
 import * as style from './styles';
-import NavToggle from '../NavToggle';
 import IgorLima from '../../assets/igorLima.png'
 
 const Navbar = () => {
@@ -13,8 +12,6 @@ const Navbar = () => {
                 <li>Projects</li>
                 <li>Contact</li>
             </ul>
-
-            <NavToggle />
         </nav>
     </style.Navbar>);
 }

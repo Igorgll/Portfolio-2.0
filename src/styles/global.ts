@@ -14,6 +14,10 @@ const GlobalStyle = createGlobalStyle `
       overflow-x: hidden;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     :root {
     --primary: #26547C;
     --yellow: #FFD166;

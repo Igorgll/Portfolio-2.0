@@ -4,6 +4,7 @@ export const aboutMeSection = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 
   width: 100vw;
   height: 100vh;
@@ -13,8 +14,8 @@ export const aboutMeSection = styled.section`
   .about_me_box {
     background: var(--light-window);
 
-    border: 3px solid #000;
-    box-shadow: 12px 12px var(--dark-shadow);
+    border: 3px solid var(--dark-shadow);
+    box-shadow: 16px 16px var(--dark-shadow);
 
     display: flex;
     flex-direction: row;
@@ -26,12 +27,34 @@ export const aboutMeSection = styled.section`
       width: 45%;
       padding: 20px;
 
-      img {
+      #handsome_pic {
         width: 100%;
         height: 400px;
 
         border: 2px solid var(--dark-shadow);
         box-shadow: 10px 10px var(--dark-shadow);
+      }
+
+      .spotify_track {
+        padding: 10px 0 0 0;
+
+        #spotify {
+          width: 95%;
+          border-radius: 50px;
+        }
+      }
+
+      .arrow {
+        padding-left: 120px;
+
+        #arrow_icon {
+          width: 60px;
+        }
+
+        #song_image {
+          width: 55%;
+          padding-left: 1.2rem;
+        }
       }
     }
 
@@ -60,12 +83,28 @@ export const aboutMeSection = styled.section`
       height: 400px;
 
       .col-left {
-        img {
+        #handsome_pic {
           width: 220px;
           height: 220px;
         }
-      }
+      
+        #spotify {
+          width: 100% !important;
+        }
 
+      .arrow {
+        padding-left: 2rem;
+      
+        #arrow_icon {
+          width: 50px;
+        }
+
+        #song_image {
+          width: 60%;
+          padding-left: 1.2rem;
+        }
+      }
+      }
       .col-right {
         h1 {
           font-size: 1.5rem;

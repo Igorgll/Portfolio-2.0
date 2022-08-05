@@ -2,8 +2,12 @@ import * as style from './styles';
 
 const NavToggle = () => {
     return(
-        <style.navToggle type='button' id='nav__collapse'>
-            ih rapaz
+        <style.navToggle id='nav__collapse'>
+            <ul>
+                <li>SOMETHING</li>
+                <li>SOMETHING</li>
+                <li>SOMETHING</li>
+            </ul>
         </style.navToggle>
     );
 }

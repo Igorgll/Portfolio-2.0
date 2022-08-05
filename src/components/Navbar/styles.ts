@@ -53,10 +53,6 @@ export const Navbar = styled.nav`
       ul {
         display: none;
       }
-
-      #nav__collapse {
-        display: block;
-      }
     }
   }
 
