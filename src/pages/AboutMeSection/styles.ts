@@ -45,15 +45,27 @@ export const aboutMeSection = styled.section`
       }
 
       .arrow {
-        padding-left: 120px;
+        padding-left: 60px;
+        display: flex;
+        flex-direction: row;
 
         #arrow_icon {
           width: 60px;
+          padding-bottom: 4rem;
         }
 
         #song_image {
           width: 55%;
           padding-left: 1.2rem;
+          padding-bottom: 2.5rem;
+        }
+
+        #happy_face {
+          width: 55%;
+          padding-left: 4rem;
+          padding-top: 5.5rem;
+          padding-right: 2rem;
+          transform: rotate(90deg);
         }
       }
     }
@@ -102,6 +114,10 @@ export const aboutMeSection = styled.section`
         #song_image {
           width: 60%;
           padding-left: 1.2rem;
+        }
+
+        #happy_face {
+          display: none;
         }
       }
       }
