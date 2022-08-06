@@ -20,7 +20,7 @@ const GlobalStyle = createGlobalStyle `
 
     :root {
     --primary: #26547C;
-    --yellow: #FFD166;
+    --yellow: #FEF8B4;
     --black: #0A100D;
     --laurel-green: #B9BAA3;
     --light: #F6F4F6;

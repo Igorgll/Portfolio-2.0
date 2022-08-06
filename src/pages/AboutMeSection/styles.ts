@@ -7,7 +7,7 @@ export const aboutMeSection = styled.section`
   flex-direction: column;
 
   width: 100vw;
-  height: 100vh;
+  height: 110vh;
 
   background: var(--dark-background);
 
@@ -35,37 +35,20 @@ export const aboutMeSection = styled.section`
         box-shadow: 10px 10px var(--dark-shadow);
       }
 
-      .spotify_track {
-        padding: 10px 0 0 0;
-
-        #spotify {
-          width: 95%;
-          border-radius: 50px;
-        }
-      }
-
       .arrow {
-        padding-left: 60px;
+        padding-left: 100px;
+        margin-top: 10px;
         display: flex;
         flex-direction: row;
 
         #arrow_icon {
-          width: 60px;
-          padding-bottom: 4rem;
+          width: 90px;
         }
 
-        #song_image {
-          width: 55%;
-          padding-left: 1.2rem;
-          padding-bottom: 2.5rem;
-        }
-
-        #happy_face {
-          width: 55%;
-          padding-left: 4rem;
-          padding-top: 5.5rem;
-          padding-right: 2rem;
-          transform: rotate(90deg);
+        #curious_fact {
+          width: 50%;
+          padding-top: 3rem;
+          padding-left: 1rem;
         }
       }
     }
