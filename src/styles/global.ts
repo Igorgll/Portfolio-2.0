@@ -1,8 +1,9 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle `
-  @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
-   
+
+  @import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@200;300;400;500;600;700&display=swap');
+
    * {
         padding: 0;
         margin: 0;
@@ -10,7 +11,7 @@ const GlobalStyle = createGlobalStyle `
     }
 
     body {
-      font-family: 'Ubuntu', sans-serif;
+      font-family: 'Kantumruy Pro', sans-serif;
       overflow-x: hidden;
     }
 

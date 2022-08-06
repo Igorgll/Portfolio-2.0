@@ -56,20 +56,21 @@ export const SectionOne = styled.section`
 
             position: absolute;
 
-            margin-left: 10px;
+            margin-left: 5px;
 
             transform: rotate(-8deg) translateY(-60px);
         }
 
         h1 {
             font-size: 4rem;
-            font-weight: 600;
+            font-weight: 700;
             text-align: flex-start;
 
             margin-top: 1rem;
         }
 
-        #Hi {
+        h4 {
+            font-weight: 400;
             padding: 0px;
         }
 

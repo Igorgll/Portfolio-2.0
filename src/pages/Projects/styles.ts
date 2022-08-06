@@ -88,7 +88,7 @@ export const Projects = styled.section`
             margin-top: 1rem;
 
             a {
-              font-weight: 600;
+              font-weight: bold !important;
             }
           }
         }

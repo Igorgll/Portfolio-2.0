@@ -15,7 +15,7 @@ const AboutMeSection = () => {
           <div>
             <div className="arrow">
             <img src={arrow} id="arrow_icon" alt="Hand drawn arrow" />
-            <img src={all_time_song} id="curious_fact" alt="My all time song" />
+            <p id="curious_fact">I also like potatos 😁</p>
             </div>
           </div>
         </div>

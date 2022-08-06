@@ -36,7 +36,7 @@ export const aboutMeSection = styled.section`
       }
 
       .arrow {
-        padding-left: 100px;
+        padding-left: 40px;
         margin-top: 10px;
         display: flex;
         flex-direction: row;
@@ -46,8 +46,9 @@ export const aboutMeSection = styled.section`
         }
 
         #curious_fact {
-          width: 50%;
-          padding-top: 3rem;
+          font-size: 1.5rem;
+          font-weight: 700;
+          padding-top: 3.3rem;
           padding-left: 1rem;
         }
       }

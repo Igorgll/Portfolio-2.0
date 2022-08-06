@@ -3,7 +3,6 @@ import Navbar from "../../components/Navbar";
 import computer from "../../assets/monitor_illustration_2.svg";
 import wavingHand from "../../assets/waving-hand_1f44b.png";
 import Hi from "../../assets/hiImIgor.png";
-import NavToggle from '../../components/MobileNav';
 import MobileNav from "../../components/MobileNav";
 
 const introduction =
@@ -21,7 +20,7 @@ const SectionOne = () => {
 
         <div className="col-right">
           <span>
-            <img src={Hi} alt="Hi I'm igor" id="Hi" />{" "}
+            <h4>Hi, I'm Igor</h4>
             <img
               src={wavingHand}
               width="60px"
