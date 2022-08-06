@@ -1,6 +1,6 @@
 import * as style from './styles';
 
-const NavToggle = () => {
+const MobileNav = () => {
     return(
         <style.navToggle id='nav__collapse'>
             <ul>
@@ -12,4 +12,4 @@ const NavToggle = () => {
     );
 }
 
-export default NavToggle;
+export default MobileNav;

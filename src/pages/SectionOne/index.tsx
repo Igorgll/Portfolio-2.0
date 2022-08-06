@@ -3,7 +3,8 @@ import Navbar from "../../components/Navbar";
 import computer from "../../assets/monitor_illustration_2.svg";
 import wavingHand from "../../assets/waving-hand_1f44b.png";
 import Hi from "../../assets/hiImIgor.png";
-import NavToggle from '../../components/NavToggle';
+import NavToggle from '../../components/MobileNav';
+import MobileNav from "../../components/MobileNav";
 
 const introduction =
   "I like to build interactive and responsive web applications using React, and JavaScript based libraries.";
@@ -31,7 +32,7 @@ const SectionOne = () => {
           <h1>{introduction}</h1>
         </div>
       </div>
-      <NavToggle />
+      <MobileNav />
     </style.SectionOne>
   );
 };

@@ -4,6 +4,8 @@ export const navToggle = styled.div`
     position: fixed;
     bottom: 0;
 
+    z-index: 1;
+
     background: var(--light);
 
     display: flex;

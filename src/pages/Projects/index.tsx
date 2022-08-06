@@ -1,7 +1,7 @@
 import * as style from "./styles";
 import { BsFillCircleFill } from "react-icons/bs";
 import { useEffect, useRef, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 interface Repo {
   name: string;
@@ -35,7 +35,6 @@ const Projects = () => {
         <ul id="projects_list">
           {repos.map((repo) => {
             return (
-                <AnimatePresence>
               <motion.div
                 id="li"
                 drag
@@ -60,7 +59,6 @@ const Projects = () => {
                   </div>
                 </div>
               </motion.div>
-              </AnimatePresence>
             );
           })}
         </ul>
