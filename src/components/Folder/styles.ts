@@ -8,14 +8,14 @@ export const folder = styled.div`
 
   border-radius: 15px;
 
-  background: var(--dark);
+  background: var(--light-gray);
 
   display: flex;
   flex-direction: column;
 
   .folder_window {
     width: 100%;
-    height: 50px;
+    height: 38px;
 
     display: flex;
     align-items: center;
@@ -36,14 +36,15 @@ export const folder = styled.div`
     .left_handside {
       height: 650px;
 
-      background: var(--dark);
+      background: var(--light-gray);
 
       border-bottom-left-radius: 15px;
+      border-right: 1px solid #000;
 
       .folder_links {
         list-style: none;
 
-        gap: 15px;
+        gap: 10px;
 
         padding: 20px;
 
@@ -55,25 +56,50 @@ export const folder = styled.div`
           color: var(--light);
           font-size: 1.4rem;
 
+          padding: 2px;
+
+          cursor: pointer;
+
+          transition: all 0.2s;
+
+          &:hover {
+            background: var(--folder-hover);
+          }
+
           svg {
             padding-top: 5px;
+            padding-right: 5px;
           }
         }
       }
     }
 
-    .folder_content {
+    .explorer_content {
       display: flex;
-      justify-content: space-around;
+      flex-direction: column;
 
       height: 650px;
 
       border-bottom-right-radius: 15px;
 
       ul {
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
+        display: grid;
+        grid-template-columns: 200px 200px 200px 200px 100px;
+        grid-template-rows: 150px 150px;
+        gap: 0;
+
+        width: 100%;
+
+        li {
+          width: 100px;
+          height: 110px;
+
+          cursor: pointer;
+
+          img {
+            width: 100px;
+          }
+        }
       }
     }
   }

@@ -1,14 +1,18 @@
 import styled from "styled-components";
 
 export const Projects = styled.section`
-  background: var(--yellow);
+  background: url("https://imgur.com/qpmwzD1.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
 
   width: 100vw;
   height: 110vh;
 
   display: flex;
   flex-direction: column;
-  align-items: center ;
+  align-items: center;
 
   .title {
     margin-top: 150px;
@@ -96,19 +100,19 @@ export const Projects = styled.section`
     }
   }
 
-  @media(max-width: 1080px) {
+  @media (max-width: 1080px) {
     #projects_list {
       grid-template-columns: 1fr 1fr !important;
     }
   }
 
-  @media(max-width: 768px) {
+  @media (max-width: 768px) {
     .title {
       margin-right: 0;
     }
-    
+
     #projects_list {
-      grid-template-columns: 1fr!important;
+      grid-template-columns: 1fr !important;
     }
 
     #li {
@@ -144,7 +148,7 @@ export const Projects = styled.section`
     #projects_list {
       gap: 0;
     }
-    
+
     .content {
       #li {
         width: 300px !important;

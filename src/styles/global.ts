@@ -30,6 +30,15 @@ const GlobalStyle = createGlobalStyle `
 
     --dark-background: #383c3f;
     --dark-shadow: #1c1c1b;
+
+      /* FOLDER COLORS */
+    --red: #E9524A;
+    --orange: #F1AE1B;
+    --green: #59C837;
+    --light-gray: #333333;
+    --folder-dark: #242424;
+    --folder-hover: #4C4C4C;
+    --icons: #90BAFB;
   }
 
   @media (max-width: 1080px) {
