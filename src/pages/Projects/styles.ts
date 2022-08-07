@@ -4,11 +4,11 @@ export const Projects = styled.section`
   background: var(--yellow);
 
   width: 100vw;
-  height: auto;
+  height: 110vh;
 
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center ;
 
   .title {
     margin-top: 150px;

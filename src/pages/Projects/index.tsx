@@ -2,6 +2,7 @@ import * as style from "./styles";
 import { BsFillCircleFill } from "react-icons/bs";
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
+import Folder from "../../components/Folder";
 
 interface Repo {
   name: string;
@@ -28,11 +29,19 @@ const Projects = () => {
 
   return (
     <style.Projects ref={constraintsRef}>
-      <div className="title">
+      {/* <div className="title">
         <h1>Projects.</h1>
-      </div>
+      </div> */}
       <div className="content">
-        <ul id="projects_list">
+        <motion.div
+          drag
+          dragConstraints={constraintsRef}
+          whileTap={{ cursor: "grabbing" }}
+        >
+          <Folder />
+        </motion.div>
+
+        {/* <ul id="projects_list">
           {repos.map((repo) => {
             return (
               <motion.div
@@ -61,7 +70,7 @@ const Projects = () => {
               </motion.div>
             );
           })}
-        </ul>
+        </ul> */}
       </div>
     </style.Projects>
   );
