@@ -12,7 +12,7 @@ const GlobalStyle = createGlobalStyle `
 
     body {
       font-family: 'Kantumruy Pro', sans-serif;
-      overflow-x: hidden;
+      overflow-x: hidden !important;
     }
 
     html {

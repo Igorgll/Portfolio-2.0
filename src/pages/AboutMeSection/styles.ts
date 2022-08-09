@@ -83,27 +83,27 @@ export const aboutMeSection = styled.section`
           width: 220px;
           height: 220px;
         }
-      
+
         #spotify {
           width: 100% !important;
         }
 
-      .arrow {
-        padding-left: 2rem;
-      
-        #arrow_icon {
-          width: 50px;
-        }
+        .arrow {
+          padding-left: 2rem;
 
-        #song_image {
-          width: 60%;
-          padding-left: 1.2rem;
-        }
+          #arrow_icon {
+            width: 50px;
+          }
 
-        #happy_face {
-          display: none;
+          #song_image {
+            width: 60%;
+            padding-left: 1.2rem;
+          }
+
+          #happy_face {
+            display: none;
+          }
         }
-      }
       }
       .col-right {
         h1 {
@@ -138,10 +138,77 @@ export const aboutMeSection = styled.section`
     }
   }
 
+  @media (max-width: 1080px) {
+    .about_me_box {
+      width: 800px;
+      height: 500px;
+
+      #handsome_pic {
+        height: 320px !important;
+      }
+
+      .col-right {
+        h1 {
+          font-size: 1.6rem;
+        }
+
+        h2 {
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .about_me_box {
+      width: 700px;
+      height: 450px;
+
+      #handsome_pic {
+        width: 100% !important;
+        height: 260px !important;
+      }
+
+      .arrow {
+        display: none !important;
+      }
+
+      .col-right {
+        h1 {
+          font-size: 1.5rem;
+        }
+
+        h2 {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+
+  @media(max-width: 650px) {
+    .about_me_box {
+      width: 400px;
+      height: 300px;
+    }
+  }
+
   @media (max-width: 375px) {
     .about_me_box {
       width: 320px;
       height: 300px;
+    
+      .col-right {
+        h1 {
+          font-size: 1.3rem !important;
+        }
+  
+        h2 {
+          font-size: 0.875rem !important;
+  
+        }
+
+      }
+
     }
   }
 
@@ -151,8 +218,12 @@ export const aboutMeSection = styled.section`
       height: 300px;
 
       .col-right {
+        h1 {
+          font-size: 1.1rem !important;
+        }
+        
         h2 {
-          font-size: 0.875rem !important;
+          font-size: 0.775rem !important;
         }
       }
     }

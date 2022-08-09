@@ -12,7 +12,7 @@ export const navToggle = styled.div`
     align-items: center;
     justify-content: center;
 
-    width: 100%;
+    width: 100vw;
     height: 80px;
 
     border-top: 3px solid var(--dark);

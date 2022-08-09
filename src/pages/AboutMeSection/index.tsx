@@ -20,12 +20,6 @@ const AboutMeSection = () => {
         />
         <div className="col-left">
           <img src={handsome} id="handsome_pic" alt="Some handsome guy" />
-          <div>
-            <div className="arrow">
-              <img src={arrow} id="arrow_icon" alt="Hand drawn arrow" />
-              <p id="curious_fact">I also like potatos 😁</p>
-            </div>
-          </div>
         </div>
         <div className="col-right">
           <h1>about me</h1>
