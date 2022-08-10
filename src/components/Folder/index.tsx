@@ -11,6 +11,26 @@ import { MdArrowForwardIos } from "react-icons/md";
 import { motion } from "framer-motion";
 import folder from "../../assets/folder.png";
 
+  // const [repos, setRepos] = useState<Repo[]>([]);
+
+  // useEffect(() => {
+  //   fetch(`https://api.github.com/users/${user}/repos`)
+  //     .then((response) => response.json())
+  //     .then((data) => {
+  //       const repositories = [data[1], data[3], data[5], data[13], data[24]];
+  //       setRepos(repositories);
+  //     });
+  // }, []);
+
+  // interface Repo {
+  // name: string;
+//   description: string;
+//   html_url: string;
+//   homepage: string;
+// }
+
+// const user = "igorgll";
+
 export default function Folder() {
   const renderNavLinks = () => {
     return (
