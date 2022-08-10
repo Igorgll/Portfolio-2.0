@@ -1,52 +1,97 @@
 import * as style from "./styles";
 import { MotionConfig } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
-import { BsFillCircleFill, BsLink, BsHouseDoor } from "react-icons/bs";
-import { CgFileDocument } from "react-icons/cg";
+import { BsFillCircleFill } from "react-icons/bs";
+import { GiBookshelf, GiSkills } from "react-icons/gi";
+import { RiMacbookLine } from "react-icons/ri";
+import { FaRegAddressBook } from "react-icons/fa";
+import { IoShareSocialSharp } from "react-icons/io5";
+import { CgFileDocument, CgProfile } from "react-icons/cg";
 import { MdArrowForwardIos } from "react-icons/md";
 import { motion } from "framer-motion";
 import folder from "../../assets/folder.png";
 
 export default function Folder() {
-  const FOLDER_NAV_LINKS = [
-    {
-      name: "Desktop",
-    },
-    {
-      name: "Downloads",
-    },
-    {
-      name: "Images",
-    },
-    {
-      name: "Songs",
-    },
-    {
-      name: "Videos",
-    },
-    {
-      name: "Trash",
-    },
-  ];
+  const renderNavLinks = () => {
+    return (
+      <>
+        <ul className="folder_links">
+          <li>
+            <CgProfile />
+            About me
+          </li>
+          <li>
+            <GiBookshelf />
+            Education
+          </li>
+          <li>
+            <GiSkills />
+            Skills
+          </li>
+          <li>
+            <RiMacbookLine />
+            Projects
+          </li>
+          <li>
+            <FaRegAddressBook />
+            Resume
+          </li>
+          <li>
+            <IoShareSocialSharp />
+            Socials
+          </li>
+        </ul>
+      </>
+    );
+  };
 
-  const LIST_FOLDERS = [
-    {
-      img: "https://imgur.com/h30UI3p.png",
-      name: "Projects",
-    },
-    {
-      img: "https://imgur.com/h30UI3p.png",
-      name: "Videos",
-    },
-    {
-      img: "https://imgur.com/h30UI3p.png",
-      name: "Photos",
-    },
-    {
-      img: "https://imgur.com/h30UI3p.png",
-      name: "Songs",
-    },
-  ];
+  function About_me() {
+    return (
+      <>
+        <h1>About me component</h1>
+      </>
+    );
+  }
+
+  function Education() {
+    return (
+      <>
+        <h1>Education component</h1>
+      </>
+    );
+  }
+
+  function Skills() {
+    return (
+      <>
+        <h1>Skills component</h1>
+      </>
+    );
+  }
+
+  function Projects() {
+    return (
+      <>
+        <h1>Projects component</h1>
+      </>
+    );
+  }
+
+  function Resume() {
+    return (
+      <>
+        <h1>Resume component</h1>
+      </>
+    );
+  }
+
+  function Socials() {
+    return (
+      <>
+        <h1>Socials component</h1>
+      </>
+    );
+  }
 
   return (
     <style.folder>
@@ -57,41 +102,11 @@ export default function Folder() {
       </div>
 
       <div className="folder_body">
-        <div className="left_handside">
-          <ul className="folder_links">
-            {FOLDER_NAV_LINKS.map((link) => {
-              return (
-                <li style={{ borderRadius: "6px", fontWeight: "200" }}>
-                  <CgFileDocument style={{ color: "var(--icons)" }} />
-                  {link.name}
-                </li>
-              );
-            })}
-          </ul>
-        </div>
+        <div className="left_handside">{renderNavLinks()}</div>
         <div
           className="explorer_content"
           style={{ background: "var(--folder-dark)", padding: "20px" }}
-        >
-          <ul style={{ listStyle: "none" }}>
-            {LIST_FOLDERS.map((item) => {
-              return (
-                <li>
-                  <img src={item.img} alt="Folder" />
-                  <p
-                    style={{
-                      color: "#FEFEFE",
-                      textAlign: "center",
-                      fontWeight: "300",
-                    }}
-                  >
-                    {item.name}
-                  </p>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
+        ></div>
       </div>
     </style.folder>
   );

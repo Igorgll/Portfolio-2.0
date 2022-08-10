@@ -1,8 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-const GlobalStyle = createGlobalStyle `
-
-  @import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@200;300;400;500;600;700&display=swap');
+const GlobalStyle = createGlobalStyle`
 
    * {
         padding: 0;
@@ -66,6 +64,6 @@ const GlobalStyle = createGlobalStyle `
   button:hover {
     cursor: pointer;
   }
-`
+`;
 
 export default GlobalStyle;

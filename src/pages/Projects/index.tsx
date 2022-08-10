@@ -1,11 +1,10 @@
-import * as style from "./styles";
 import { BsFillCircleFill } from "react-icons/bs";
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import Folder from "../../components/Folder";
 
 // interface Repo {
-//   name: string;
+  // name: string;
 //   description: string;
 //   html_url: string;
 //   homepage: string;
