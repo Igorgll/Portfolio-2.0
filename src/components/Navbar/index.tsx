@@ -5,6 +5,7 @@ const Navbar = () => {
     <style.Navbar>
       <nav>
         <h1>Igor Lima</h1>
+
         <ul>
           <li>About me</li>
           <li>Projects</li>

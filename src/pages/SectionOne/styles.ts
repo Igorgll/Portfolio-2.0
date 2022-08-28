@@ -53,6 +53,7 @@ export const SectionOne = styled.section`
       display: flex;
       align-items: center;
       font-size: 2rem;
+      font-family: "Itim", cursive;
 
       position: absolute;
 
@@ -156,6 +157,9 @@ export const SectionOne = styled.section`
 
   @media (max-width: 650px) {
     padding: 0;
+
+    width: 100%;
+    height: 100vh;
 
     .col-right {
       padding: 0px 20px;

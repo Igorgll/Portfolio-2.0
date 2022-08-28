@@ -4,9 +4,13 @@ export const aboutMeSection = styled.section`
   width: 100vw;
   height: 110vh;
 
-  background: var(--dark-background);
+  background: var(--yellow);
 
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 650px) {
+    display: none;
+  }
 `;

@@ -25,6 +25,9 @@ export const Navbar = styled.nav`
 
     h1 {
       font-size: 2rem;
+      font-family: "Itim", cursive;
+    cursor: pointer;
+
     }
 
     ul {
@@ -36,6 +39,9 @@ export const Navbar = styled.nav`
 
       li {
         font-size: 1.5rem;
+        font-weight: 500;
+    cursor: pointer;
+
       }
     }
   }
@@ -56,9 +62,9 @@ export const Navbar = styled.nav`
     }
   }
 
-  @media(max-width: 650px) {
+  @media (max-width: 650px) {
     nav {
       padding: 50px 20px;
     }
   }
-`
+`;

@@ -4,9 +4,9 @@ const MobileNav = () => {
     return(
         <style.navToggle id='nav__collapse'>
             <ul>
-                <li>SOMETHING</li>
-                <li>SOMETHING</li>
-                <li>SOMETHING</li>
+                <li>About me</li>
+                <li>Projects</li>
+                <li>Skills</li>
             </ul>
         </style.navToggle>
     );

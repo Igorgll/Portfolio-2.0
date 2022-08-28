@@ -23,6 +23,10 @@ export const navToggle = styled.div`
         flex-direction: row;
         list-style: none;
 
+        font-weight: 500;
+
+        text-transform: uppercase;
+
         padding-top: 2rem;
     }
 `;

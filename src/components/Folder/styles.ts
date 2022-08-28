@@ -5,8 +5,6 @@ export const folder = styled.div`
 
   border-radius: 15px;
 
-  background: var(--folder-dark);
-
   display: flex;
   flex-direction: column;
 
@@ -21,9 +19,9 @@ export const folder = styled.div`
 
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
-    border-bottom: 1.2px solid #000;
+    border: 2px solid var(--dark);
 
-    background: var(--light-gray);
+    background: var(--light);
 
     svg {
       margin-left: 8px;
@@ -37,10 +35,12 @@ export const folder = styled.div`
     .left_handside {
       height: 100%;
 
-      background: var(--light-gray);
+      background: var(--light);
 
       border-bottom-left-radius: 15px;
-      border-right: 1px solid #000;
+      border-right: 2px solid var(--dark);
+      border-left: 2px solid var(--dark);
+      border-bottom: 2px solid var(--dark);
 
       .folder_links {
         list-style: none;
@@ -53,7 +53,7 @@ export const folder = styled.div`
         flex-direction: column;
 
         li {
-          color: var(--light);
+          color: var(--dark);
           font-size: 1.4rem;
 
           padding: 2px;
@@ -66,6 +66,7 @@ export const folder = styled.div`
 
           &:hover {
             background: var(--folder-hover);
+            color: var(--light);
           }
 
           svg {
@@ -76,30 +77,28 @@ export const folder = styled.div`
       }
     }
   }
-    .explorer_content {
-      display: flex;
-      flex-direction: column;
-
-      height: 662px;
-
-      border-bottom-right-radius: 15px;
+  .explorer_content {
+    display: flex;
+    flex-direction: column;
+    background: var(--light) !important;
 
 
+    height: 662px;
+
+    border-bottom-right-radius: 15px;
+    border-bottom: 2px solid var(--dark);
+    border-right: 2px solid var(--dark);
   }
 
   @media (max-width: 1080px) {
-      width: 900px;
+    width: 900px;
 
     .explorer_content {
       height: 530px !important;
     }
   }
 
-  @media(max-width: 768px) {
+  @media (max-width: 768px) {
     width: 700px;
-  }
-
-  @media(max-width: 650px) {
-    display: none;
   }
 `;

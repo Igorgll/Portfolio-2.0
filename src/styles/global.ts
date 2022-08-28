@@ -64,6 +64,7 @@ const GlobalStyle = createGlobalStyle`
   button:hover {
     cursor: pointer;
   }
+
 `;
 
 export default GlobalStyle;
