@@ -55,6 +55,7 @@ export const folder = styled.div`
         li {
           color: var(--dark);
           font-size: 1.4rem;
+          font-weight: 500;
 
           padding: 2px;
 
