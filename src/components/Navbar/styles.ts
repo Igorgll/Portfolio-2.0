@@ -19,6 +19,30 @@ export const Navbar = styled.nav`
 
     color: var(--dark);
 
+    .button__menu {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      row-gap: 6px;
+
+      width: 40px;
+      z-index: 2;
+
+      background: transparent;
+    }
+
+    .button__menu span {
+      width: 100%;
+      height: 5px;
+
+      border-radius: 6px;
+
+      display: block;
+      background: var(--dark);
+
+      transition: all 0.6s;
+    }
+
     #nav__collapse {
       display: none;
     }
@@ -26,23 +50,7 @@ export const Navbar = styled.nav`
     h1 {
       font-size: 2rem;
       font-family: "Itim", cursive;
-    cursor: pointer;
-
-    }
-
-    ul {
-      list-style: none;
-      display: flex;
-      flex-direction: row;
-
-      gap: 3rem;
-
-      li {
-        font-size: 1.5rem;
-        font-weight: 500;
-    cursor: pointer;
-
-      }
+      cursor: pointer;
     }
   }
 
@@ -55,6 +63,10 @@ export const Navbar = styled.nav`
   @media (max-width: 768px) {
     nav {
       padding: 50px 30px;
+
+      .button__menu {
+        display: none;
+      }
 
       ul {
         display: none;

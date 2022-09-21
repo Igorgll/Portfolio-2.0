@@ -5,7 +5,6 @@ export const aboutIgor = styled.div`
   height: 100%;
 
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
 
@@ -15,7 +14,7 @@ export const aboutIgor = styled.div`
 
   img {
     border-radius: 50%;
-    width: 250px;
+    width: 230px;
   }
 
   @media (max-width: 768px) {

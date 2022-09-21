@@ -1,9 +1,8 @@
-import { aboutMeSection } from "./../AboutMeSection/styles";
 import styled from "styled-components";
 
 export const SectionOne = styled.section`
   width: 100vw;
-  height: 110vh;
+  height: 100%;
 
   background: var(--light);
 
@@ -35,7 +34,7 @@ export const SectionOne = styled.section`
     img {
       width: 800px;
       display: block;
-      padding-bottom: 11rem;
+      padding-bottom: 8.5rem;
     }
   }
 
@@ -105,7 +104,7 @@ export const SectionOne = styled.section`
     padding: 0px 19px;
 
     .content {
-      margin-top: 5rem;
+      margin-top: 8.1rem;
     }
 
     .col-left {
@@ -133,6 +132,7 @@ export const SectionOne = styled.section`
 
     .content {
       margin: 0;
+      height: 600px;
     }
 
     .col-left {
@@ -143,7 +143,7 @@ export const SectionOne = styled.section`
       width: 100%;
 
       padding: 0px 30px;
-      margin-top: 10rem;
+      margin-bottom: 8rem;
 
       span {
         font-size: 1.4rem;

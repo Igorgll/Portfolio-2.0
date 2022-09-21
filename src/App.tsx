@@ -1,17 +1,11 @@
-import Header from './pages/SectionOne';
-import AboutMeSection from './pages/AboutMeSection';
-import Contact from './pages/Contact';
+import SectionOne from "./pages/SectionOne";
 
 function App() {
-
   return (
     <>
-    <Header/>
-    <AboutMeSection />
-    <Contact />
+      <SectionOne />
     </>
   );
-
 }
 
-export default App
+export default App;
