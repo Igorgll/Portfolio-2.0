@@ -3,22 +3,27 @@ import styled from "styled-components";
 export const Navigation = styled.section`
   position: fixed;
   top: 0;
-  right: -660px;
-  width: 150vw;
-  height: 100vh;
+  right: 0;
+  width: 100%;
+  height: 100%;
   z-index: 1;
 
-  transition: all 0.6s;
+  background: var(--yellow);
 
-  background: var(--laurel-green);
-
-  padding-top: 66px;
-  padding-bottom: 32px;
-  padding-left: 54px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   padding-right: 80px;
+  padding-left: 80px;
   overflow: auto;
 
-   .navigation.active {
-    transform: translateX(-660px);
+  ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+
+    li {
+      font-family: 'itim', cursive;
+      font-size: 2.5rem;
+    }
   }
 `;

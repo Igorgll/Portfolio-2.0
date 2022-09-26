@@ -1,6 +1,7 @@
 import * as style from "./styles";
 import { useState } from "react";
 import Navigation from "../Navigation";
+import { motion, MotionConfig } from "framer-motion";
 
 const Navbar = () => {
   const [navbarOpen, setNavabarOpen] = useState(false);
@@ -12,18 +13,41 @@ const Navbar = () => {
   return (
     <style.Navbar>
       <nav>
-        <h1>Igor Lima</h1>
+        <motion.div
+          initial={{ scale: 0 }}
+          animate={{ rotate: 0, scale: 1 }}
+          transition={{
+            type: "spring",
+            stiffness: 260,
+            damping: 20,
+          }}
+        >
+          <h1>Igor Lima</h1>
+        </motion.div>
 
-        <button type="button" className="button__menu" onClick={handleToggle}>
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+        <motion.div
+        className="hamburguer"
+          initial={{ scale: 0 }}
+          animate={{ rotate: 360, scale: 1 }}
+          transition={{
+            type: "spring",
+            stiffness: 260,
+            damping: 20,
+          }}
+        >
+          <button
+            type="button"
+            className={`button__menu ${navbarOpen ? "active" : ""}`}
+            onClick={handleToggle}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </motion.div>
       </nav>
 
-      <div>
-        {navbarOpen ? <Navigation /> : ""}
-      </div>
+      <div>{navbarOpen ? <Navigation /> : ""}</div>
     </style.Navbar>
   );
 };

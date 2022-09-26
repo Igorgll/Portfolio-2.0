@@ -1,6 +1,6 @@
 import * as style from "./styles";
 import Navbar from "../../components/Navbar";
-import computer from "../../assets/monitor_illustration_2.svg";
+import handsome from "../../assets/handsome2.jpg";
 import wavingHand from "../../assets/waving-hand_1f44b.png";
 import MobileNav from "../../components/MobileNav";
 import Navigation from "../../components/Navigation";
@@ -16,7 +16,7 @@ export const SectionOne = () => {
 
       <div className="content">
         <div className="col-left">
-          <img src={computer} alt="Computer pic" />
+          <img src={handsome} alt="Computer pic" />
         </div>
 
         <div className="col-right">

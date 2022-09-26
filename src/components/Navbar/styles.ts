@@ -19,6 +19,10 @@ export const Navbar = styled.nav`
 
     color: var(--dark);
 
+    .hamburguer {
+      z-index: 2;
+    }
+
     .button__menu {
       display: flex;
       flex-direction: column;
@@ -41,6 +45,19 @@ export const Navbar = styled.nav`
       background: var(--dark);
 
       transition: all 0.6s;
+    }
+
+    .button__menu.active span:last-child {
+      width: 100%;
+      transform: rotate(46deg) translateY(-16px);
+    }
+
+    .button__menu.active span:nth-child(1) {
+      transform: rotate(-45deg) translateY(16px);
+    }
+
+    .button__menu.active span:nth-child(2) {
+      opacity: 0;
     }
 
     #nav__collapse {

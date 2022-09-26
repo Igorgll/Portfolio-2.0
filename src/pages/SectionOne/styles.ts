@@ -27,14 +27,18 @@ export const SectionOne = styled.section`
     justify-content: flex-start;
     flex-direction: column;
 
-    padding-left: 40px;
+    padding-left: 90px;
+    margin-bottom: 8.5rem;
 
     width: 60%;
 
     img {
-      width: 800px;
+      width: 600px;
+      border-radius: 100%;
+      /* padding: 5px; */
+      border: 10px solid var(--dark);
       display: block;
-      padding-bottom: 8.5rem;
+      /* padding-bottom: 8.8rem; */
     }
   }
 
@@ -110,7 +114,7 @@ export const SectionOne = styled.section`
     .col-left {
       padding: 0;
       img {
-        width: 560px;
+        width: 450px;
       }
     }
 
