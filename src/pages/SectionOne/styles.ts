@@ -1,88 +1,66 @@
+import { BsGithub } from "react-icons/bs";
 import styled from "styled-components";
 
 export const SectionOne = styled.section`
   width: 100vw;
-  height: 100%;
+  height: 100vh;
 
-  background: var(--light);
+  background: var(--background);
 
   display: flex;
   flex-direction: column;
 
-  color: var(--dark);
+  color: var(--light);
 
-  padding: 0px 160px;
+  /* padding: 0px 120px; */
 
   .content {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-
-    margin-top: 4rem;
   }
 
-  .col-left {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-
-    padding-left: 90px;
-    margin-bottom: 8.5rem;
-
-    width: 60%;
-
-    img {
-      width: 600px;
-      border-radius: 100%;
-      /* padding: 5px; */
-      border: 10px solid var(--dark);
-      display: block;
-      /* padding-bottom: 8.8rem; */
-    }
-  }
-
-  .col-right {
+  .welcome_text {
     display: flex;
     flex-direction: column;
 
-    width: 40%;
-    padding-right: 40px;
-    padding-bottom: 160px;
+    margin-left: 5rem;
 
-    margin-top: 1rem;
-
-    span {
-      display: flex;
-      align-items: center;
-      font-size: 2rem;
-      font-family: "Itim", cursive;
-
-      position: absolute;
-
-      margin-left: 5px;
-
-      transform: rotate(-8deg) translateY(-60px);
+    p {
+      font-size: 1.5rem;
+      font-weight: 300;
+      text-align: flex-start;
+      max-width: 600px;
+      color: var(--text);
     }
 
     h1 {
-      font-size: 4rem;
-      font-weight: 700;
-      text-align: flex-start;
-
-      margin-top: 1rem;
-    }
-
-    h4 {
+      font-size: 4.5rem;
+      font-weight: 900 !important;
       font-weight: 400;
+      text-transform: uppercase;
       padding: 0px;
     }
 
-    #waving_hand {
-      padding-bottom: 30px;
-      padding-left: 5px;
+    .social_media_icons {
+      display: flex;
+      flex-direction: row;
+      margin-top: 1.5rem;
+      gap: 10px;
+    }
 
-      transform: rotate(30deg);
+    svg {
+      opacity: 0.6;
+      width: 32px;
+      gap: 5px;
+      width: 32px;
+      height: auto;
+      cursor: pointer;
+      transition: 0.6s;
+
+      &:hover {
+        opacity: 1;
+      }
     }
   }
 
@@ -91,36 +69,15 @@ export const SectionOne = styled.section`
   }
 
   @media (max-width: 1440px) {
-    padding: 0px 60px;
-
     .content {
       margin: 0;
-    }
-
-    .col-left {
-      img {
-        width: 600px;
-      }
     }
   }
 
   @media (max-width: 1080px) {
-    padding: 0px 19px;
-
-    .content {
-      margin-top: 8.1rem;
-    }
-
-    .col-left {
-      padding: 0;
-      img {
-        width: 450px;
-      }
-    }
-
-    .col-right {
+    .welcome_text {
       padding-right: 10px;
-
+      
       span {
         font-size: 1.5rem;
       }
@@ -139,11 +96,7 @@ export const SectionOne = styled.section`
       height: 600px;
     }
 
-    .col-left {
-      display: none;
-    }
-
-    .col-right {
+    .welcome_text {
       width: 100%;
 
       padding: 0px 30px;
@@ -165,7 +118,7 @@ export const SectionOne = styled.section`
     width: 100%;
     height: 100vh;
 
-    .col-right {
+    .welcome_text {
       padding: 0px 20px;
       h1 {
         font-size: 2.5rem;

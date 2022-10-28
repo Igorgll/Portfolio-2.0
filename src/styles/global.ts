@@ -8,9 +8,13 @@ const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
     }
 
-    body {
-      font-family: 'Kantumruy Pro', sans-serif;
-      overflow-x: hidden !important;
+    body, button, textarea, input {
+    color: var(--text);
+    font: 400 1rem "Roboto", sans-serif;
+    }
+
+    h1, h2, h3, h4, h5, h6, strong, b {
+    font-family: var(--font-poppins);
     }
 
     html {
@@ -18,9 +22,11 @@ const GlobalStyle = createGlobalStyle`
     }
 
     :root {
-    --yellow: #FEF8B4;
-    --light: #F6F4F6;
-    --dark: #404040;
+    --background: #1D1D34;
+    --blue: #1A1A2E;
+    --light: #FFFFFE;
+    --text: #94A1A6;
+    --font-poppins: 'Poppins';
   }
 
   @media (max-width: 1080px) {

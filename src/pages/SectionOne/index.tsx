@@ -1,9 +1,7 @@
 import * as style from "./styles";
 import Navbar from "../../components/Navbar";
-import handsome from "../../assets/handsome2.jpg";
-import wavingHand from "../../assets/waving-hand_1f44b.png";
 import MobileNav from "../../components/MobileNav";
-import Navigation from "../../components/Navigation";
+import { BsLinkedin, BsGithub, BsInstagram } from "react-icons/bs";
 
 //TEXTS
 const introduction =
@@ -12,24 +10,20 @@ const introduction =
 export const SectionOne = () => {
   return (
     <style.SectionOne>
-      <Navbar />
-
       <div className="content">
-        <div className="col-left">
-          <img src={handsome} alt="Computer pic" />
+        <div className="aside_nav">
+          <Navbar />
         </div>
-
-        <div className="col-right">
-          <span>
-            <h4>Hi, I'm Igor</h4>
-            <img
-              src={wavingHand}
-              width="60px"
-              id="waving_hand"
-              alt="Waving hand icon"
-            />{" "}
-          </span>
-          <h1>{introduction}</h1>
+        <div>
+          <div className="welcome_text">
+            <h1>Igor Lima</h1>
+            <p>{introduction}</p>
+            <ul className="social_media_icons">
+            <BsGithub />
+            <BsLinkedin />
+            <BsInstagram />
+            </ul>
+          </div>
         </div>
       </div>
       <MobileNav />
