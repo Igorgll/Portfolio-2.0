@@ -4,12 +4,6 @@ import { motion, MotionConfig } from "framer-motion";
 import { ImHome3, ImUser, ImFolderOpen, ImBubble } from "react-icons/im";
 
 const Navbar = () => {
-  const [navbarOpen, setNavabarOpen] = useState(false);
-
-  const handleToggle = () => {
-    setNavabarOpen(!navbarOpen);
-  };
-
   return (
     <style.Navbar>
       <nav>
@@ -22,21 +16,21 @@ const Navbar = () => {
             damping: 20,
           }}
         > */}
-        <strong>il</strong>
-        <ul className="nav_links">
-          <li>
-            <ImHome3 />
-          </li>
-          <li>
-            <ImUser />
-          </li>
-          <li>
-            <ImFolderOpen />
-          </li>
-          <li>
-            <ImBubble />
-          </li>
-        </ul>
+          <strong>il</strong>
+          <ul className="nav_links">
+            <li>
+              <ImHome3 />
+            </li>
+            <li>
+              <ImUser />
+            </li>
+            <li>
+              <ImFolderOpen />
+            </li>
+            <li>
+              <ImBubble />
+            </li>
+          </ul>
         {/* </motion.div> */}
       </nav>
     </style.Navbar>

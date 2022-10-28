@@ -77,7 +77,7 @@ export const SectionOne = styled.section`
   @media (max-width: 1080px) {
     .welcome_text {
       padding-right: 10px;
-      
+
       span {
         font-size: 1.5rem;
       }
@@ -92,15 +92,34 @@ export const SectionOne = styled.section`
     padding: 0;
 
     .content {
-      margin: 0;
-      height: 600px;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      flex-direction: column-reverse;
     }
 
     .welcome_text {
       width: 100%;
+      margin: 0;
 
-      padding: 0px 30px;
-      margin-bottom: 8rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h1 {
+        text-align: center;
+        max-width: 100%;
+        font-size: 4.5rem;
+      }
+
+      p {
+        text-align: center;
+      }
+
+      .social_media_icons {
+        display: flex;
+        justify-content: center;
+      }
 
       span {
         font-size: 1.4rem;
@@ -122,6 +141,10 @@ export const SectionOne = styled.section`
       padding: 0px 20px;
       h1 {
         font-size: 2.5rem;
+      }
+
+      svg {
+        width: 25px;
       }
     }
   }

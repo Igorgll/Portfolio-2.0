@@ -1,6 +1,5 @@
 import * as style from "./styles";
 import Navbar from "../../components/Navbar";
-import MobileNav from "../../components/MobileNav";
 import { BsLinkedin, BsGithub, BsInstagram } from "react-icons/bs";
 
 //TEXTS
@@ -19,14 +18,13 @@ export const SectionOne = () => {
             <h1>Igor Lima</h1>
             <p>{introduction}</p>
             <ul className="social_media_icons">
-            <BsGithub />
-            <BsLinkedin />
-            <BsInstagram />
+              <BsGithub />
+              <BsLinkedin />
+              <BsInstagram />
             </ul>
           </div>
         </div>
       </div>
-      <MobileNav />
     </style.SectionOne>
   );
 };

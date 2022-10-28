@@ -5,7 +5,6 @@ export const Navbar = styled.nav`
     background: var(--blue);
     height: 100vh;
     width: 100px;
-    z-index: 1;
     overflow-x: hidden;
     margin: 0;
 
@@ -25,18 +24,16 @@ export const Navbar = styled.nav`
     }
 
     .nav_links {
-      color: var(--text);
       list-style: none;
-      margin: auto 0;
       opacity: 0.6;
+      margin: auto 0;
 
       padding: 15px;
 
       border: 0.5px solid var(--text);
-      border-radius: 10px;
+      border-radius: 12px;
 
       li {
-        opacity: 0.6;
         width: 100%;
         padding-top: 15px;
         padding-bottom: 15px;
@@ -45,10 +42,6 @@ export const Navbar = styled.nav`
 
         transition: 0.6s;
         cursor: pointer;
-
-        &:hover {
-          opacity: 1;
-        }
 
         &:first-child {
           border-bottom: 0.5px solid var(--text);
@@ -90,9 +83,31 @@ export const Navbar = styled.nav`
 
   @media (max-width: 768px) {
     nav {
-      padding: 50px 30px;
+      height: auto;
+      width: 100%;
 
-      ul {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+
+      background: transparent;
+      .nav_links {
+        display: flex;
+        width: 700px;
+
+        li {
+          border: none !important;
+
+          padding-top: 0;
+          padding-bottom: 0;
+          padding-left: 50px;
+          padding-right: 50px;
+        }
+      }
+
+      strong {
         display: none;
       }
     }
@@ -101,6 +116,32 @@ export const Navbar = styled.nav`
   @media (max-width: 650px) {
     nav {
       padding: 50px 20px;
+    }
+
+    .nav_links {
+      width: 360px !important;
+
+      li {
+        padding: 0 !important;
+        display: flex;
+        align-items: center !important;
+
+        &:first-child {
+          padding-left: 40px !important;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 375px) {
+    .nav_links {
+      width: 330px !important;
+    }
+  }
+
+  @media (max-width: 320px) {
+    .nav_links {
+      width: 300px !important;
     }
   }
 `;
